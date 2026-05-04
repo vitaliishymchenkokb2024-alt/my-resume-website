@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Моє резюме</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="main">
+
+    <h1 class="title">Резюме</h1>
+
+    <h2 class="section">Особиста інформація</h2>
+    <p class="info"><b>ПІБ:</b> Шимченко Віталій Юрійович</p>
+    <p class="info"><b>Вік:</b> 19</p>
+    <p class="info"><b>Місто:</b> м. Львів</p>
+
+    <h2 class="section">Освіта</h2>
+    <p>Львівська політехніка</p>
+
+    <h2 class="section">Навички</h2>
+    <ul class="list">
+        <li>C#</li>
+        <li>HTML</li>
+        <li>Git</li>
+        <li>Python</li>
+    </ul>
+
+    <h2 class="section">Коментарі</h2>
+    <div id="comments"></div>
+
+    <footer id="footer"></footer>
+
+    <button onclick="toggleTheme()">Змінити тему</button>
+
+    <!-- МОДАЛКА -->
+    <div id="modal" style="display:none; position:fixed; top:20%; left:30%; background:white; padding:20px;">
+        <h3>Зворотній зв'язок</h3>
+
+        <form action="https://formspree.io/f/xeepvljp" method="POST">
+            <input type="text" name="name" placeholder="Ім'я"><br><br>
+            <input type="email" name="email" placeholder="Email"><br><br>
+            <input type="tel" name="phone" placeholder="Телефон"><br><br>
+            <textarea name="message" placeholder="Повідомлення"></textarea><br><br>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

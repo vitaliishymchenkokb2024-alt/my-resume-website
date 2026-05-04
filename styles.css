@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e9ecef;
+    margin: 0;
+    padding: 20px;
+}
+
+/* головна картка */
+#main {
+    width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* заголовок */
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2b2d42;
+}
+
+/* секції */
+.section {
+    margin-top: 25px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ddd;
+    color: #1d3557;
+}
+
+/* текст */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+/* списки */
+.list {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #4a90e2;
+}
+
+/* елементи списку */
+li {
+    margin: 5px 0;
+}
+
+/* hover ефект */
+li:hover {
+    color: #e63946;
+    transition: 0.2s;
+}
+
+/* ===== ТЕМНА ТЕМА ===== */
+body.dark {
+    background: #121212 !important;
+}
+
+    /* головна картка */
+    body.dark #main {
+        background: #1e1e1e !important;
+        color: #eaeaea !important;
+    }
+
+    /* заголовок */
+    body.dark .title {
+        color: #ffffff !important;
+    }
+
+    /* секції */
+    body.dark .section {
+        color: #90caf9 !important;
+        border-color: #333 !important;
+    }
+
+    /* параграфи */
+    body.dark p,
+    body.dark li {
+        color: #ddd !important;
+    }
+
+    /* список */
+    body.dark .list {
+        background: #2a2a2a !important;
+        border-left-color: #90caf9 !important;
+    }
